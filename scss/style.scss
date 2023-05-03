@@ -23,7 +23,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+p {
   margin: 0;
 }
 .container {
@@ -51,6 +52,7 @@ header::before {
   background-size: cover;
   background-repeat: no-repeat;
   transform: translateY(50%);
+  z-index: 2;
 }
 header::after {
   content: "";
@@ -64,6 +66,7 @@ header::after {
   background-size: cover;
   background-repeat: no-repeat;
   transform: translateY(89%) rotate(180deg);
+  z-index: 3;
 }
 
 .header__top {
@@ -101,6 +104,8 @@ header::after {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
+  border: 2px solid red;
 }
 .header__content-box {
   min-width: 550px;
@@ -109,6 +114,7 @@ header::after {
   margin-right: 30px;
   font-style: normal;
   font-weight: 700;
+  border: 2px solid red;
 }
 .header__title {
   text-transform: uppercase;
@@ -128,5 +134,37 @@ header::after {
 
 .header__decor-text {
   position: absolute;
-  top: 0;
+  bottom: 0px;
+  color: #0093a1;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 145px;
+  opacity: 0.3;
+}
+.header__decor-text_1 {
+  text-align: center;
+  right: 170px;
+  ;
+  bottom: 0px;
+}
+.header__decor-text_2 {
+  text-align: center;
+  left: 265px;
+  z-index: 4;
+  bottom: -100px;
+}
+.header__decor-text_3 {
+  font-family: "Inter";
+  opacity: 1;
+  max-width: 360px;
+  right: 145px;
+  z-index: 4;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+  font-style: italic;
+  text-align: center;
+  bottom: -100px;
 }
