@@ -146,7 +146,6 @@ header::after {
 .header__decor-text_1 {
   text-align: center;
   right: 170px;
-  ;
   bottom: 0px;
 }
 .header__decor-text_2 {
@@ -167,4 +166,24 @@ header::after {
   font-style: italic;
   text-align: center;
   bottom: -100px;
+}
+//-----SECTION INFO----///
+.info {
+  background-image: url(/image/Background\ 2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.info::after {
+  content: "";
+  position: absolute;
+  height: 160px;
+  background-image: url(/image/Rectangle\ 1.svg);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.info__top {
 }
