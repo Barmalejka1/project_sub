@@ -423,7 +423,6 @@ header::after {
   align-items: center;
   justify-content: flex-end;
   position: relative;
-  border: 2px solid red;
 }
 
 .header__content-box {
@@ -433,7 +432,6 @@ header::after {
   margin-right: 30px;
   font-style: normal;
   font-weight: 700;
-  border: 2px solid red;
 }
 
 .header__title {
@@ -510,4 +508,60 @@ header::after {
   left: 0;
   right: 0;
   z-index: 1;
+}
+
+.info__top {
+  display: flex;
+  gap: 80px;
+  padding-top: 270px;
+  margin-bottom: 65vh;
+}
+.info__top p {
+  max-width: 290px;
+  padding-top: 245px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  position: relative;
+}
+
+img {
+  z-index: 6;
+  position: relative;
+}
+
+.info__btn {
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.info__btn path:hover {
+  fill: #b9c400;
+}
+
+span {
+  padding-top: 12px;
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.info__top_text--second {
+  border-bottom: 1px solid #ffffff;
+}
+
+.info__top_text--first {
+  padding-bottom: 120px;
 }
