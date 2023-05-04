@@ -338,6 +338,11 @@ p {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 1230px;
   padding: 0px, 15px;
@@ -543,10 +548,6 @@ img {
   right: 0;
 }
 
-.info__btn path:hover {
-  fill: #b9c400;
-}
-
 span {
   padding-top: 12px;
   display: block;
@@ -564,4 +565,85 @@ span {
 
 .info__top_text--first {
   padding-bottom: 120px;
+}
+
+.info__specs {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+
+.info__specs_title {
+  text-transform: uppercase;
+  font-family: "Comfortaa" cursive;
+  font-size: 60px;
+  line-height: 67px;
+  width: 250px;
+}
+
+.info__specs_list {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding: 30px 0;
+  width: 565px;
+  font-weight: 700;
+}
+
+.info__specs_item {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__specs_caption {
+  width: 185px;
+}
+
+.buy {
+  padding-top: 150px;
+}
+.buy__inner {
+  display: flex;
+  align-items: center;
+}
+.buy__title {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 67px;
+  color: #0093a1;
+}
+.buy__list {
+  list-style: none;
+  padding: 50px 0;
+  max-width: 287px;
+}
+.buy__item {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #262c27;
+  padding-bottom: 30px;
+}
+.buy__item-title {
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.buy__item-text {
+  font-weight: 400;
+}
+.buy__btn {
+  text-align: center;
+  cursor: pointer;
+  color: #0093a1;
+  border: 2px solid #0093a1;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
 }
