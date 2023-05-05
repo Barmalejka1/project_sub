@@ -309,6 +309,77 @@ template {
   display: none;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 *,
 *::after,
 *::before {
@@ -602,11 +673,16 @@ span {
 }
 
 .buy {
-  padding-top: 150px;
+  padding: 150px 0;
 }
 .buy__inner {
   display: flex;
   align-items: center;
+  gap: 90px;
+}
+.buy__content {
+  width: 510px;
+  position: relative;
 }
 .buy__title {
   font-family: "Comfortaa";
@@ -619,7 +695,6 @@ span {
 .buy__list {
   list-style: none;
   padding: 50px 0;
-  max-width: 287px;
 }
 .buy__item {
   font-family: "Inter";
@@ -627,11 +702,17 @@ span {
   font-size: 18px;
   line-height: 22px;
   color: #262c27;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
+  max-width: 285px;
 }
 .buy__item-title {
+  text-transform: uppercase;
   padding-bottom: 10px;
   font-weight: 700;
+  transition: color 0.6s ease;
+}
+.buy__item-title:hover {
+  color: #0093a1;
 }
 .buy__item-text {
   font-weight: 400;
@@ -646,4 +727,43 @@ span {
   font-weight: 700;
   font-size: 40px;
   line-height: 45px;
+  transition: color background-color 0.6s ease;
+  max-width: 484px;
+  width: 100%;
+  padding: 18px;
+  background-color: transparent;
+}
+.buy__btn:hover {
+  color: #262c27;
+  background-color: #b9c400;
+  border: 2px solid #b9c400;
+}
+.buy__price {
+  width: 201px;
+  height: 199px;
+  position: absolute;
+  right: 0px;
+  bottom: 150px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/image/Star\ 1.svg);
+  background-repeat: no-repeat;
+}
+.buy__price:hover {
+  width: 250px;
+  height: 248px;
+  font-size: 40px;
+  line-height: 48px;
+}
+.tech-top {
+  background-image: url(/image/Group.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
