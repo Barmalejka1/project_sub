@@ -36,7 +36,7 @@ ul {
 }
 .container {
   max-width: 1230px;
-  padding: 0px, 15px;
+  padding: 0px 15px;
   margin: 0 auto;
 }
 .play_video {
@@ -205,7 +205,7 @@ header::after {
   gap: 80px;
   padding-top: 270px;
   margin-bottom: 65vh;
-  p {
+  &_text {
     max-width: 290px;
     padding-top: 245px;
     font-family: "Inter";
@@ -674,6 +674,99 @@ img {
     line-height: 22px;
   }
 }
+//-----Mredia-----///
+@media (max-width: 1230px) {
+  .container {
+    max-width: 960px;
+  }
+  .header__decor-text_2 {
+    left: 0;
+  }
+  .header {
+    min-height: 70vh;
+  }
+}
+@media (max-width: 1000px) {
+  .info__top {
+    display: block;
+  }
+  .info__top_text {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+  .info__top_text--first {
+    padding-top: 35px;
+    z-index: 6;
+  }
+  .info__top_png {
+    display: block;
+    margin: 0 auto;
+    width: 186px;
+  }
+  .info__btn {
+  }
+  .info__specs {
+    display: block;
+  }
+  .info__specs_title {
+  }
+  .info__top_text--second {
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 630px) {
+  .info__specs_list {
+    width: 100%;
+  }
+  .info__specs_item {
+    display: block;
+  }
+  .info__specs_caption {
+    color: #2c2020;
+  }
+  .info__top {
+    margin-bottom: 24vh;
+  }
+  .info__btn {
+    bottom: -101px;
+    right: 193px;
+  }
+}
+@media (max-width: 720px) {
+  .header {
+    min-height: 40vh;
+  }
+  .header__top {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 90px;
+    padding-right: 30px;
+  }
+  .header__btn {
+    width: 70%;
+  }
+  .header__content-box {
+    min-width: 250px;
+  }
+}
+@media (max-width: 375px) {
+  .header__decor-text {
+    display: none;
+  }
+}
 
-.title {
+@media (max-width: 375px) {
+  .header {
+    min-height: 20vh;
+  }
+  .container {
+    max-width: 340px;
+  }
+  .header__content-box {
+    min-width: 250px;
+  }
+  .header__content {
+    z-index: 5;
+  }
 }
