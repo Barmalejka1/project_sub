@@ -488,6 +488,10 @@ header::after {
   line-height: 22px;
 }
 
+header__phone:hover {
+  transform: scale(1.2);
+}
+
 .logo path {
   transition: fill 0.6s ease;
 }
@@ -1034,8 +1038,41 @@ img {
   .header {
     min-height: 70vh;
   }
+  .buy {
+    padding-top: 90px;
+  }
+  .buy__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .buy__img {
+    order: -1;
+  }
+}
+@media (max-width: 1230px) {
+  .gallery__text {
+    width: 100%;
+    text-align: center;
+  }
+  .gallery__box {
+    flex-wrap: wrap;
+  }
+  .gallery__min {
+    margin-top: 0;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 20px 10px 20px;
+  }
+  .gallery__min__img {
+    width: 100%;
+    align-self: stretch;
+  }
 }
 @media (max-width: 1000px) {
+  .info__btn {
+    bottom: -41%;
+    right: 50%;
+  }
   .info__top {
     display: block;
   }
@@ -1059,6 +1096,9 @@ img {
   .info__top_text--second {
     padding-bottom: 25px;
   }
+  .info__top {
+    margin-bottom: 18vh;
+  }
 }
 @media (max-width: 630px) {
   .info__specs_list {
@@ -1073,9 +1113,13 @@ img {
   .info__top {
     margin-bottom: 24vh;
   }
-  .info__btn {
-    bottom: -101px;
-    right: 193px;
+  .buy__price {
+    right: 101px;
+    bottom: 1181px;
+    z-index: 11;
+  }
+  .buy__img {
+    max-width: 400px;
   }
 }
 @media (max-width: 720px) {
@@ -1099,8 +1143,6 @@ img {
   .header__decor-text {
     display: none;
   }
-}
-@media (max-width: 375px) {
   .header {
     min-height: 20vh;
   }
@@ -1112,5 +1154,8 @@ img {
   }
   .header__content {
     z-index: 5;
+  }
+  .buy__img {
+    max-width: 300px;
   }
 }
